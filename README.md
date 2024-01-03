@@ -1,5 +1,12 @@
 # Calculator
 ---
+![image](https://github.com/Hellf0rg0d/Calculator/assets/93775719/b5104ab0-8878-4d09-a01f-9040cc050607)
+
+![image](https://github.com/Hellf0rg0d/Calculator/assets/93775719/74e11242-f5ef-4891-99f7-86fc5b871243)
+
+![image](https://github.com/Hellf0rg0d/Calculator/assets/93775719/dd11451e-f7f3-451f-8a67-ecc66f929e3b)
+
+---
 ## A SIMPLE BASIC/ADVANCED CALCULATOR 
 ---
 >[!NOTE]
