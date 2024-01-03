@@ -15,4 +15,6 @@
 ## and executing the following command in the directory 
 ```java -jar calculator.jar``` 
 ## and that's it 
-
+>[!NOTE]
+>The themes are from [flatlaf](https://www.formdev.com/flatlaf/).     
+>The Font/s are from [IBMPlex](https://www.ibm.com/plex/)
