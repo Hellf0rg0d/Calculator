@@ -1,6 +1,10 @@
 # Calculator
 ---
-![image](https://github.com/Hellf0rg0d/Calculator/assets/93775719/b5104ab0-8878-4d09-a01f-9040cc050607)
+![image](https://github.com/Hellf0rg0d/Calculator/assets/93775719/516b6440-c77a-4064-87ab-ef53465c5891)
+
+![image](https://github.com/Hellf0rg0d/Calculator/assets/93775719/e5d99b38-5e54-472d-84ea-79b9bd72a2de)
+
+![image](https://github.com/Hellf0rg0d/Calculator/assets/93775719/c9a1cb67-5127-4697-8fe0-e38050ea2866)
 
 ![image](https://github.com/Hellf0rg0d/Calculator/assets/93775719/74e11242-f5ef-4891-99f7-86fc5b871243)
 
