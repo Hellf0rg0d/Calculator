@@ -174,8 +174,7 @@ public class Adv {
 				        }
 					privalue = sb.toString();
 					if(operation == -1) {
-						dis2.setText(privalue);
-						
+						dis2.setText(privalue);			
 					}
 					else {
 						operate(operation);
@@ -651,7 +650,8 @@ public class Adv {
 						secvalue = null;
 						dis1.setText("");
 						dis2.setText("0");
-						
+						dis1.setForeground(Color.WHITE);
+						dis2.setForeground(Color.WHITE);
 					}
 				});
 				clear.setBounds(441, 380, 75, 48);
@@ -756,6 +756,8 @@ public class Adv {
 	}
 	private void operate(int a) {
 		frame.requestFocusInWindow();
+		dis1.setForeground(Color.WHITE);
+		dis2.setForeground(Color.WHITE);
 		if(inv == true ) {
 			if(a == 0) {
 			if(deg == false) {
@@ -856,9 +858,19 @@ public class Adv {
 			dis1.setText("Log("+privalue+")");
 			if(logbase.toLowerCase().equals("e")) {
 			dis2.setText(Double.toString(Math.log(Double.parseDouble(privalue)/Math.log(Math.E))));
+			if(dis2.getText().toLowerCase().equals("infinity")) {
+				dis1.setForeground(new Color(220,100,0));
+				dis2.setForeground(new Color(220,100,0));
+				
+			}
 		}
 			else {
 				dis2.setText(Double.toString(Math.log(Double.parseDouble(privalue))/Math.log(Double.parseDouble(logbase))));
+				if(dis2.getText().toLowerCase().equals("infinity")) {
+					dis1.setForeground(new Color(220,100,0));
+					dis2.setForeground(new Color(220,100,0));
+					
+				}
 			}
 		}
 		else if( a== 5) {
@@ -867,15 +879,30 @@ public class Adv {
 				privalue = "0";
 				dis1.setText(secvalue+" ^ "+privalue);
 				dis2.setText(Double.toString(Math.pow(secvalue, Double.parseDouble(privalue))));
+				if(dis2.getText().toLowerCase().equals("infinity")) {
+					dis1.setForeground(new Color(220,100,0));
+					dis2.setForeground(new Color(220,100,0));
+					
+				}
 			}
 			else {
 			dis1.setText(secvalue+" ^ "+privalue);
 			dis2.setText(Double.toString(Math.pow(secvalue, Double.parseDouble(privalue))));
+			if(dis2.getText().toLowerCase().equals("infinity")) {
+				dis1.setForeground(new Color(220,100,0));
+				dis2.setForeground(new Color(220,100,0));
+				
+			}
 		}
 		}
 		else if(a == 6) {
 			dis1.setText("e^"+privalue);
 			dis2.setText(Double.toString(Math.pow(Math.E,Double.parseDouble(privalue))));
+			if(dis2.getText().toLowerCase().equals("infinity")) {
+				dis1.setForeground(new Color(220,100,0));
+				dis2.setForeground(new Color(220,100,0));
+				
+			}
 		}
 		}
 	}
