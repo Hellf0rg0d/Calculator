@@ -607,7 +607,8 @@ public class Main {
 						secvalue = null;
 						dis1.setText("");
 						dis2.setText("0");
-						
+						dis1.setForeground(Color.WHITE);
+						dis2.setForeground(Color.WHITE);
 					}
 				});
 				clear.setBounds(448, 380, 60, 48);
@@ -690,6 +691,8 @@ public class Main {
 	}
 	private void operate(int a) {
 		frame.requestFocusInWindow();
+		dis1.setForeground(Color.WHITE);
+		dis2.setForeground(Color.WHITE);
 		if(a == 0) {
 			if(secvalue == null) {
 				secvalue = Double.parseDouble(privalue);
@@ -708,10 +711,20 @@ public class Main {
 			privalue = "0";
 			dis1.setText(secvalue+" / "+privalue);
 			dis2.setText(Double.toString(secvalue/(Double.parseDouble(privalue))));
+			if(dis2.getText().toLowerCase().equals("infinity")) {
+				dis1.setForeground(new Color(220,100,0));
+				dis2.setForeground(new Color(220,100,0));
+				
+			}
 			}
 				else {
 					dis1.setText(secvalue+" / "+privalue);
 					dis2.setText(Double.toString(secvalue/(Double.parseDouble(privalue))));
+					if(dis2.getText().toLowerCase().equals("infinity")) {
+						dis1.setForeground(new Color(220,100,0));
+						dis2.setForeground(new Color(220,100,0));
+						
+					}
 				}
 			}
 			catch(Exception ex) {
@@ -761,6 +774,11 @@ public class Main {
 			privalue = "0";
 			dis1.setText("√"+secvalue);
 			dis2.setText(Double.toString(Math.sqrt(secvalue)));
+			if(dis2.getText().equals("NaN")) {
+				dis1.setForeground(new Color(220,100,0));
+				dis2.setForeground(new Color(220,100,0));
+				dis2.setText("Keep it real");
+			}
 		}
 		
 		else {
